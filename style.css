@@ -1,0 +1,157 @@
+/*Variáveis*/
+:root{
+    --cor-principal: #ffba00;
+    --cor-preta: #282828;
+}
+
+/*Reset CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: var(--cor-preta);
+}
+
+/*Header*/
+.banner{
+    background-image: url('src/banner.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 700px;
+}/*Container banner section*/
+
+.banner > img{
+    width: 70px;
+    margin: 100px 0 0 300px;
+}/*Logo*/
+
+.banner > p{
+    margin: 15px 0 30px 300px;
+    font-size: 1.5em;
+    line-height: 40px;
+}/*Pequeno texto no banner*/
+
+.banner > a{
+    background-color: white;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor-preta);
+
+    padding: 15px;
+    border-radius: 8px;
+    margin-left: 300px;
+}/*Botão enviar receita*/
+
+/*Seção de vantagens*/
+.icons{
+    position: absolute;
+    display: flex;;
+    margin: -80px 0 50px 14%;
+    background-color: white;
+    border-radius: 10px;
+    filter: drop-shadow(5px 10px 20px rgba(0, 0, 0, 0.3));
+}/*Container/barra de icons banner*/
+
+.icons > div{
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}/*itens dentro do container icons*/
+
+.icons > div > p{
+    text-align: center;
+}/*Texto em baixo do titulo*/
+
+.icons > div > i{
+    font-size: 2em;
+    margin: 0 0 10px 0;
+}/*Icone do bloco*/
+
+.barra{
+    margin: 10px 0;
+}/*Barra entre os icones*/
+
+/*Main produtos*/
+main{
+    margin: 80px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} /*Main*/
+
+main > h1{
+    margin: 70px 0;
+} /*Titulo manipulados*/
+
+.produtos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}/*Seção de produtos*/
+
+.linha{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}/*Linha dos produtos*/
+
+#linha2,
+#linha3{
+    margin: 50px 0 0 0;
+}/*Manipulando apenas a linha 2 e 3*/
+
+.produto{
+    margin: 0 5% 0 5%;
+}/*Card do produto*/
+
+.produto > img{
+    width: 200px;
+}/*Imagem do produto*/
+
+/*Footer*/
+footer{
+    margin: 100px 0 0 0;
+}/*O container geral do footer*/
+
+.iconsFooter{
+    position: absolute;
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: center;
+    margin: -40px 0 0 18%;
+    width: 65%;
+    height: 100px;
+    border-radius: 10px;
+}/*Seção que contem os icones*/
+
+.contato{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}/*Cada parte que contem o icone e o texto*/
+
+.contato > i{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#cnt1,
+#cnt2{
+    margin-right: 50px;
+}/*ajustando a margem dos elementos 1 e 2 dos icons*/
+
+#cnt2,
+#cnt3{
+    margin-left: 50px;
+}/*Ajustando a margem dos elementos 2 e 3 dos icons*/
+
+@media only screen and(max-width: 600px){
+    
+}
