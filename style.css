@@ -92,12 +92,14 @@ main > h1{
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }/*Seção de produtos*/
 
 .linha{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
 }/*Linha dos produtos*/
 
@@ -108,7 +110,15 @@ main > h1{
 
 .produto{
     margin: 0 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }/*Card do produto*/
+
+.produto > h2{
+    text-align: center;
+}
 
 .produto > img{
     width: 200px;
