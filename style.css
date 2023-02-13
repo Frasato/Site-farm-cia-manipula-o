@@ -135,11 +135,11 @@ main > h1{
     }
 }
 
-span.btnCompra{
+span#btnCompra{
     display: none;
 }
 
-span.btnCompra > a{
+span#btnCompra > a{
     position: absolute;
     margin: 520px 0 0 0;
     right: 1150px;
