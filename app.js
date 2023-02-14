@@ -1,14 +1,11 @@
-var p1 =  document.getElementById('p1');
-var btnCompra = document.getElementById('btnCompra');
+var produtos = document.getElementsByClassName('produto');
 
-p1.addEventListener('mouseenter', ()=>{
-    p1.classList.add('cardAnimado');
-    p1.classList.remove('produto');
-    btnCompra.style.display = 'block'
-});
+for(let i = 0; i < produtos.length; i++){
+    produtos[i].addEventListener('mouseenter',()=>{
+        produtos[i].classList.add('cardAnimado');
+    });
 
-p1.addEventListener('mouseleave', ()=>{
-    p1.classList.add('produto');
-    p1.classList.remove('cardAnimado');
-    btnCompra.style.display = 'none';
-});
+    produtos[i].addEventListener('mouseout', ()=>{
+        produtos[i].classList.remove('cardAnimado');
+    });
+}
